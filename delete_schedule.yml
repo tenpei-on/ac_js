@@ -8,5 +8,5 @@
     - name: Delete Schedule
       ansible.controller.schedule:
         name: "{{ schedule_name }}"
-        unified_job_template: "{{ job_tenplate_name }}"
+        unified_job_template: "{{ job_template_name }}"
         state: absent

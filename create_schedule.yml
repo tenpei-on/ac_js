@@ -8,7 +8,7 @@
     - name: Delete Schedule
       ansible.controller.schedule:
         name: "{{ schedule_name }}"
-        unified_job_template: "{{ job_tenplate_name }}"
+        unified_job_template: "{{ job_template_name }}"
         rrule: "DTSTART;TZID=Asia/Tokyo:{{ deadend }} RRULE:INTERVAL=1;COUNT=1;FREQ=MINUTELY"
 
         state: present
