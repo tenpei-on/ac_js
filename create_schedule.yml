@@ -1,0 +1,17 @@
+---
+- hosts: localhost
+  gather_facts: false
+  vars:
+  # schedule_name: 
+    job_template_name: delete 
+  tasks:
+    - name: Delete Schedule
+      ansible.controller.schedule:
+        name: "{{ schedule_name }}"
+        unified_job_template: "{{ job_tenplate_name }}"
+        rrule: "DTSTART;TZID=Asia/Tokyo:{{ deadend }} RRULE:INTERVAL=1;COUNT=1;FREQ=MINUTELY"
+
+        state: present
+        extra_data:
+          job_temlate_name: "{{ job_template_name }}"
+          schedule_name: "{{ schedule_name }}"

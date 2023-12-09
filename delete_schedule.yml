@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  gather_facts: false
+  vars:
+  # schedule_name: 
+  #    job_template_name: delete 
+  tasks:
+    - name: Delete Schedule
+      ansible.controller.schedule:
+        name: "{{ schedule_name }}"
+        unified_job_template: "{{ job_tenplate_name }}"
+        state: absent
