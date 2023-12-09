@@ -13,5 +13,5 @@
 
         state: present
         extra_data:
-          job_temlate_name: "{{ job_template_name }}"
+          job_template_name: "{{ job_template_name }}"
           schedule_name: "{{ schedule_name }}"
