@@ -1,0 +1,60 @@
+branch_name: ansible-localhost-2023-12-21T101520.202841+0900
+branches:
+- main
+- main
+- main
+changed: true
+failed: false
+msg: 'Successfully retrieved repository: https://github.com/tenpei-on/ac_js.git'
+name: ac_js
+output:
+-   command: 'git -C /var/folders/mc/r3f7rbfn3nncpdqn1764z_d80000gn/T/tmpg1_mz_68
+        -c ''http.extraheader=AUTHORIZATION: basic <TOKEN>'' clone --depth=1 --progress
+        --no-single-branch https://github.com/tenpei-on/ac_js.git'
+    env: ''
+    return_code: 0
+    stderr_lines:
+    - Cloning into 'ac_js'...
+    - 'remote: Enumerating objects: 5, done.        '
+    - 'remote: Counting objects:  20% (1/5)        '
+    - 'remote: Counting objects:  40% (2/5)        '
+    - 'remote: Counting objects:  60% (3/5)        '
+    - 'remote: Counting objects:  80% (4/5)        '
+    - 'remote: Counting objects: 100% (5/5)        '
+    - 'remote: Counting objects: 100% (5/5), done.        '
+    - 'remote: Compressing objects:  20% (1/5)        '
+    - 'remote: Compressing objects:  40% (2/5)        '
+    - 'remote: Compressing objects:  60% (3/5)        '
+    - 'remote: Compressing objects:  80% (4/5)        '
+    - 'remote: Compressing objects: 100% (5/5)        '
+    - 'remote: Compressing objects: 100% (5/5), done.        '
+    - 'remote: Total 5 (delta 1), reused 2 (delta 0), pack-reused 0        '
+    - 'Receiving objects:  20% (1/5)'
+    - 'Receiving objects:  40% (2/5)'
+    - 'Receiving objects:  60% (3/5)'
+    - 'Receiving objects:  80% (4/5)'
+    - 'Receiving objects: 100% (5/5)'
+    - 'Receiving objects: 100% (5/5), done.'
+    - 'Resolving deltas:   0% (0/1)'
+    - 'Resolving deltas: 100% (1/1)'
+    - 'Resolving deltas: 100% (1/1), done.'
+    stdout_lines: []
+-   command: git -C /var/folders/mc/r3f7rbfn3nncpdqn1764z_d80000gn/T/tmpg1_mz_68/ac_js
+        branch -a
+    env: ''
+    return_code: 0
+    stderr_lines: []
+    stdout_lines:
+    - '* main'
+    - '  remotes/origin/HEAD -> origin/main'
+    - '  remotes/origin/main'
+-   command: git -C /var/folders/mc/r3f7rbfn3nncpdqn1764z_d80000gn/T/tmpg1_mz_68/ac_js
+        checkout -t -b ansible-localhost-2023-12-21T101520.202841+0900
+    env: ''
+    return_code: 0
+    stderr_lines:
+    - Switched to a new branch 'ansible-localhost-2023-12-21T101520.202841+0900'
+    stdout_lines:
+    - Branch 'ansible-localhost-2023-12-21T101520.202841+0900' set up to track local
+        branch 'main'.
+path: /var/folders/mc/r3f7rbfn3nncpdqn1764z_d80000gn/T/tmpg1_mz_68/ac_js
