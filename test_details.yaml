@@ -1,0 +1,71 @@
+branch_name: ansible-localhost-2023-12-21T102503.334528+0900
+branches:
+- main
+- main
+- ansible-localhost-2023-12-21T101520.202841+0900
+- main
+changed: true
+failed: false
+msg: 'Successfully retrieved repository: https://github.com/tenpei-on/ac_js.git'
+name: ac_js
+output:
+-   command: 'git -C /var/folders/mc/r3f7rbfn3nncpdqn1764z_d80000gn/T/tmpxcnozrgf
+        -c ''http.extraheader=AUTHORIZATION: basic <TOKEN>'' clone --depth=1 --progress
+        --no-single-branch https://github.com/tenpei-on/ac_js.git'
+    env: ''
+    return_code: 0
+    stderr_lines:
+    - Cloning into 'ac_js'...
+    - 'remote: Enumerating objects: 8, done.        '
+    - 'remote: Counting objects:  12% (1/8)        '
+    - 'remote: Counting objects:  25% (2/8)        '
+    - 'remote: Counting objects:  37% (3/8)        '
+    - 'remote: Counting objects:  50% (4/8)        '
+    - 'remote: Counting objects:  62% (5/8)        '
+    - 'remote: Counting objects:  75% (6/8)        '
+    - 'remote: Counting objects:  87% (7/8)        '
+    - 'remote: Counting objects: 100% (8/8)        '
+    - 'remote: Counting objects: 100% (8/8), done.        '
+    - 'remote: Compressing objects:  14% (1/7)        '
+    - 'remote: Compressing objects:  28% (2/7)        '
+    - 'remote: Compressing objects:  42% (3/7)        '
+    - 'remote: Compressing objects:  57% (4/7)        '
+    - 'remote: Compressing objects:  71% (5/7)        '
+    - 'remote: Compressing objects:  85% (6/7)        '
+    - 'remote: Compressing objects: 100% (7/7)        '
+    - 'remote: Compressing objects: 100% (7/7), done.        '
+    - 'remote: Total 8 (delta 2), reused 5 (delta 1), pack-reused 0        '
+    - 'Receiving objects:  12% (1/8)'
+    - 'Receiving objects:  25% (2/8)'
+    - 'Receiving objects:  37% (3/8)'
+    - 'Receiving objects:  50% (4/8)'
+    - 'Receiving objects:  62% (5/8)'
+    - 'Receiving objects:  75% (6/8)'
+    - 'Receiving objects:  87% (7/8)'
+    - 'Receiving objects: 100% (8/8)'
+    - 'Receiving objects: 100% (8/8), done.'
+    - 'Resolving deltas:   0% (0/2)'
+    - 'Resolving deltas:  50% (1/2)'
+    - 'Resolving deltas: 100% (2/2)'
+    - 'Resolving deltas: 100% (2/2), done.'
+    stdout_lines: []
+-   command: git -C /var/folders/mc/r3f7rbfn3nncpdqn1764z_d80000gn/T/tmpxcnozrgf/ac_js
+        branch -a
+    env: ''
+    return_code: 0
+    stderr_lines: []
+    stdout_lines:
+    - '* main'
+    - '  remotes/origin/HEAD -> origin/main'
+    - '  remotes/origin/ansible-localhost-2023-12-21T101520.202841+0900'
+    - '  remotes/origin/main'
+-   command: git -C /var/folders/mc/r3f7rbfn3nncpdqn1764z_d80000gn/T/tmpxcnozrgf/ac_js
+        checkout -t -b ansible-localhost-2023-12-21T102503.334528+0900
+    env: ''
+    return_code: 0
+    stderr_lines:
+    - Switched to a new branch 'ansible-localhost-2023-12-21T102503.334528+0900'
+    stdout_lines:
+    - Branch 'ansible-localhost-2023-12-21T102503.334528+0900' set up to track local
+        branch 'main'.
+path: /var/folders/mc/r3f7rbfn3nncpdqn1764z_d80000gn/T/tmpxcnozrgf/ac_js
